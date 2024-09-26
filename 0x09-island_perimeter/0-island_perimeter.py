@@ -25,7 +25,7 @@ def island_perimeter(grid):
 				if c > 0 and grid[r][c-1] == 1:
 					perimiter -= 1
 				#Right
-				if c < 0 and grid[r][c+1] == 1:
+				if c < cols and grid[r][c+1] == 1:
 					perimiter -= 1
 	
 	return perimiter
