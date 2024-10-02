@@ -1,4 +1,15 @@
+#!/usr/bin/python3
+
+"""
+Implements the Sieve of Eratosthenes algorithm to generate a list
+of prime numbers up to a given maximum number.
+"""
+
+
 def sieve_of_eratosthenes(max_n):
+    """
+    return primes
+    """
     sieve = [True] * (max_n + 1)
     sieve[0] = sieve[1] = False
     for i in range(2, int(max_n ** 0.5) + 1):
@@ -9,7 +20,15 @@ def sieve_of_eratosthenes(max_n):
     return primes
 
 
+"""
+Determines the winner of a prime number game between Maria and Ben.
+"""
+
+
 def isWinner(x, nums):
+    """
+    return the winner
+    """
     if x < 1 or not nums:
         return None
 
